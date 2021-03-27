@@ -132,7 +132,7 @@ while True:
     # 거상 링크 클릭
     driver.find_element_by_xpath('//*[@id="main_pack"]/section[1]/div[2]/div[1]/div/div[2]/dl/div[5]/dd/a').click()
     time.sleep(3)
-
+    ###################
     for Tid in id_list:
         if login(Tid.get("id"), Tid.get("pw")):
             print('이미 아이템을 수령하셨습니다.' + '[' + str(datetime.now()) + ']')
